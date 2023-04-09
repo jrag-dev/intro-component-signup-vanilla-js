@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<meta name="description" content="Solución a un challenge nivel Junior de frontendmentor.io usando HTML, CSS3 y JavaScript"/>
+	<meta name="keywords" content="FrontendMentor.io, Challenges ,HTML & CSS, JavaScript"/>
+	<meta name="author" content="José Alvarado" />
+	<meta name="copyright" content="Propietario del copyright" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+	<main class="main">
+		<section class="signup container">
+			<div class="signup__texts">
+				<h1 class="signup__title">Learn to code by watching others</h1>
+				<p class="signup__paragraph">
+					See how experienced developers solve problems in real-time. Watching scripted
+					tutorials is great, but understanding how developers think is invaluable. 
+				</p>
+			</div>
+			<div class="signup__form">
+				<div class="signup__message">
+					<p class="message__paragraph">
+						Try it free 7 days then
+						<span class="message__span">$20/mo. thereafter</span>
+					</p>
+				</div>
+				<form class="form">
+				
+					<div class="form__group">
+						<div class="form__field">
+							<input class="form__input" type="text" name="firstname" id="firstname" placeholder="First Name"/>
+						</div>
+						<p class="form__message">First Name a cannot be empty</p>
+					</div>
+					<div class="form__group">
+						<div class="form__field">
+							<input class="form__input" type="text" name="lastname" id="lastname" placeholder="Last Name"/>
+						</div>
+						<p class="form__message">Last Name a cannot be empty</p>
+					</div>
+					<div class="form__group">
+						<div class="form__field">
+							<input class="form__input" type="email" name="email" id="email" placeholder="Email Address"/>
+						</div>
+						<p class="form__message">Looks like this is not an email</p>
+					</div>
+					<div class="form__group">
+						<div class="form__field">
+							<input class="form__input" type="passowrd" name="password" id="password" placeholder="Password"/>
+						</div>
+						<p class="form__message">Password a cannot be empty</p>
+					</div>
+					
+					<button class="form__btn" type="button">Claim your free trial</button>
+					
+					<p class="form__terms">By clicking the button, you are agreeing to our <span class="form__terms-span">Terms and Services</span></p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<script src="./js/index.js" type="module"></script>
+</body>
+</html>
