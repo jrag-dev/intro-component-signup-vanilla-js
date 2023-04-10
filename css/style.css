@@ -98,6 +98,7 @@ body {
 	background-color: var(--blue-color);
 	color: var(--grayish-blue-color);
 	border-radius: 8px;
+	width: 100%;
 }
 
 .message__paragraph {
@@ -183,6 +184,14 @@ body {
 	padding: 8px 0 12px 0;
 }
 
+.form__group .form__img {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 14px;
+	right: 1rem;
+}
+
 .form__group.form__group-correct .form__message {
 	visibility: hidden;
 	opacity: 0;
@@ -195,6 +204,9 @@ body {
 .form__group.form__group-correct .form__img {
 	visibility: hidden;
 	opacity: 0;
+	position: absolute;
+	top: 14px;
+	right: 1rem;
 }
 
 .form__group.form__group-incorrect .form__img {
@@ -206,6 +218,6 @@ body {
 }
 
 
-.form__group.form__group-correct .orm__input {
+.form__group.form__group-correct .form__input {
 	border: 2px solid var(--grayish-blue-color);
 }
