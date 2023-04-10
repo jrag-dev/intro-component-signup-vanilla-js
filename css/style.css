@@ -30,6 +30,7 @@ body {
 .main {
 	position: relative;
 	width: 100%;
+	min-height: 100vh;
 	height: 1000px;
 
 	display: grid;
@@ -96,6 +97,7 @@ body {
 
 .signup__message {
 	background-color: var(--blue-color);
+	box-shadow: 0px 8px 5px rgba(0, 0, 0, .3);
 	color: var(--grayish-blue-color);
 	border-radius: 8px;
 	width: 100%;
@@ -132,7 +134,7 @@ body {
 
 .form__input {
 	border: none;
-	border: 2px solid var(--grayish-blue-color);
+	border: 1px solid #DEDEDE;
 	border-radius: 4px;
 	outline: none;
 	padding: 16px;
@@ -157,6 +159,12 @@ body {
 	text-transform: uppercase;
 	padding: 16px;
 	width: 100%;
+	cursor: pointer;
+}
+
+.form__btn:hover {
+	background-color: var(--green-color);
+	opacity: .7;
 }
 
 .form__terms {
@@ -180,7 +188,7 @@ body {
 	color: var(--red-color);
 	font-size: 12px;
 	font-style: italic;
-	font-weight: 600;
+	font-weight: 500;
 	padding: 8px 0 12px 0;
 }
 
@@ -220,4 +228,34 @@ body {
 
 .form__group.form__group-correct .form__input {
 	border: 2px solid var(--grayish-blue-color);
+}
+
+@media screen and (min-width: 900px) {
+
+	.main {
+		height: 800px;
+	}
+	.signup {
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+
+	.signup__texts {
+			text-align: start;
+			gap: 1rem;
+		}
+
+	.signup__title {
+			font-size: 3rem;
+		}
+
+	.signup__form {
+			width: 100%;
+			gap: 1.8rem;
+		}
+
+	.form {
+		padding: 2rem;
+	}
+
 }
